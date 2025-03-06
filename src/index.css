@@ -1,1 +1,36 @@
+@font-face {
+  font-family: 'gilroy-regular';
+  src: url('./fonts/gilroy-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @import "tailwindcss";
+
+
+
+@theme {
+/* breakpoints */
+  --breakpoint-xs: 25.625rem; /* 410px */
+  --breakpoint-sm: 40rem; /* 640px (Default) */
+  --breakpoint-md: 48rem; /* 768px (Default) */
+  --breakpoint-lg: 64rem; /* 1024px (Default) */
+  --breakpoint-xl: 80rem; /* 1280px (Default) */
+  --breakpoint-2xl: 90rem; /* 1440px (Custom) */
+  /* colors */
+  --color-primary: #1A73E8; /* Trustworthy Blue - Main Brand Color */
+  --color-secondary: #17C3B2; /* Vibrant Teal - Highlight & Actions */
+  --color-background: #F4F7FC; /* Soft Light Gray - Background */
+  --color-surface: #FFFFFF; /* White - Card & Section Background */
+  --color-text-primary: #0D1B2A; /* Deep Navy - Main Text */
+  --color-text-secondary: #3D5A80; /* Muted Blue - Secondary Text */
+  --color-border: #D1D9E6; /* Light Gray - Borders & Dividers */
+  --color-success: #34D399; /* Green - Success Messages */
+  --color-warning: #FACC15; /* Yellow - Warnings */
+  --color-error: #EF4444; /* Red - Errors & Alerts */
+  --color-info: #3B82F6; /* Info Blue - Notifications */
+  --color-muted: #64748B; /* Muted Gray - Less Prominent Text */
+  --color-overlay: rgba(0, 0, 0, 0.5); /* Dark Overlay for Modals */
+  /* fonts */
+  --font-gilroy-regular: 'gilroy-regular';
+}
