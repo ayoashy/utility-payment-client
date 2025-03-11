@@ -1,7 +1,8 @@
 import { RouterProvider } from 'react-router';
 import { createBrowserRouter, Navigate } from 'react-router';
 import RootLayout from './pages/RootLayout';
-import Homepage from './pages/Homepage';
+// import Homepage from './pages/Homepage';
+import LandingPage from './pages/LandingPage';
 
 const router = createBrowserRouter([
   {
@@ -10,20 +11,28 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Homepage  />,
+        element: <LandingPage />,
         index: true,
       },
       {
-        path: '/pricing',
-        element: <div>Pricing</div>,
+        path: '/dashboard',
+        element: <div>Dashboard</div>,
       },
       {
-        path: '/contact',
-        element: <div>contact</div>,
+        path: '/faucets',
+        element: <div>Faucets</div>,
       },
       {
-        path: '/get-a-demo',
-        element: <div>get-a-demo</div>,
+        path: '/utilities',
+        element: <div>Utilities</div>,
+      },
+      {
+        path: '/subscriptions',
+        element: <div>subscriptions</div>,
+      },
+      {
+        path: '/history',
+        element: <div>history</div>,
       },
       {
         path: '/*',
