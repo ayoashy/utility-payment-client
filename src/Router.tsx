@@ -5,6 +5,11 @@ import RootLayout from './pages/RootLayout';
 import LandingPage from './pages/LandingPage';
 import DashboardPage from './pages/DashboardPage';
 import FaucetsPage from './pages/FaucetsPage';
+import TokenTransferPage from './pages/TokenTransferPage';
+import UtilitiesPage from './pages/UtilitiesPage';
+import SubscriptionPage from './pages/SubscriptionPage';
+import TokenHistoryPage from './pages/HistoryPage';
+import HistoryPage from './pages/HistoryPage';
 
 const router = createBrowserRouter([
   {
@@ -26,19 +31,19 @@ const router = createBrowserRouter([
       },
       {
         path: '/transfer',
-        element: <div>transfer</div>,
+        element: <TokenTransferPage />
       },
       {
         path: '/utilities',
-        element: <div>Utilities</div>,
+        element: <UtilitiesPage />
       },
       {
         path: '/subscriptions',
-        element: <div>subscriptions</div>,
+        element: <SubscriptionPage />
       },
       {
         path: '/history',
-        element: <div>history</div>,
+        element: <HistoryPage />
       },
       {
         path: '/*',
