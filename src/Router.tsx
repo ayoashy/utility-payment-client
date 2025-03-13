@@ -3,6 +3,8 @@ import { createBrowserRouter, Navigate } from 'react-router';
 import RootLayout from './pages/RootLayout';
 // import Homepage from './pages/Homepage';
 import LandingPage from './pages/LandingPage';
+import DashboardPage from './pages/DashboardPage';
+import FaucetsPage from './pages/FaucetsPage';
 
 const router = createBrowserRouter([
   {
@@ -16,11 +18,15 @@ const router = createBrowserRouter([
       },
       {
         path: '/dashboard',
-        element: <div>Dashboard</div>,
+        element: <DashboardPage />
       },
       {
         path: '/faucets',
-        element: <div>Faucets</div>,
+        element: <FaucetsPage />
+      },
+      {
+        path: '/transfer',
+        element: <div>transfer</div>,
       },
       {
         path: '/utilities',

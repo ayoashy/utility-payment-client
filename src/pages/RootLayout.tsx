@@ -191,11 +191,11 @@ const RootLayout = () => {
   const menuItems = [
     { id: 'dashboard', label: 'Dashboard', icon: 'grid' },
     { id: 'faucets', label: 'Faucets', icon: 'package' },
+    { id: 'transfer', label: 'Transfer', icon: 'package' },
     { id: 'utilities', label: 'Utilities', icon: 'user' },
     { id: 'subscriptions', label: 'Subscriptions', icon: 'settings' },
     { id: 'history', label: 'history', icon: 'settings' },
   ];
-
   // Handle screen resize
   useEffect(() => {
     const checkScreenSize = () => {
